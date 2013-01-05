@@ -1,0 +1,5 @@
+/*
+ * app CSS
+ */
+.dbgBorder{border:1px solid red}
+.chatRoom{overflow-y:auto;height:300px}

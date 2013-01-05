@@ -1,11 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta charset="utf-8">
+    <title><%title%></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap<%prodSuffix%>.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="css/bootstrap-responsive<%prodSuffix%>.css" rel="stylesheet">
+	
+    <link href="css/app<%prodSuffix%>.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="ico/favicon.png">
   </head>
+
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#"><%title%></a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+          		<li class="active"><a href="#">Home</a></li>
+				<li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+			<ul class="nav">
+				<li><a href="#chat" id="linkChat">Chat</a></li>
+				<li><a href="#table" id="linkChat">Table</a></li>
+				<li><a href="#board" id="linkChat">Board</a></li>
+				<li><a href="#Show" id="linkShow">Show</a></li>
+				<li><a href="#chat" id="linkChat">Chat</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <h1>Welcome to BBM</h1>
+      <p>Use this barebones HTML document.</p>
+<div id='modules'></div>
+	
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery<%prodSuffix%>.js"></script>
+    <script src="js/bootstrap<%prodSuffix%>.js"></script>
+    <script src="js/app<%prodSuffix%>.js"></script>
   </body>
 </html>
